@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Labs — Experiments & Demos</title>
+  <meta name="description" content="Hands-on demos: RAG chatbot, LinkedIn agent, momentum journal, and more." />
+  <link rel="canonical" href="https://labs.janaka.me/"/>
+  <style>
+    body{margin:0;background:#0b1016;color:#e8eef7;font:16px/1.6 system-ui}
+    a{color:#00b3ff} .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    .nav{display:flex;gap:12px;justify-content:space-between;border-bottom:1px solid #2a3a50;padding:12px 0}
+    .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+    .card{background:#121823;border:1px solid #2a3a50;border-radius:14px;padding:16px}
+    .meta{color:#9fb1c5;font-size:14px}
+    .tag{display:inline-block;background:#1a2330;border:1px solid #2a3a50;border-radius:999px;padding:4px 10px;margin-right:6px;font-size:12px;color:#9fb1c5}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="nav">
+    <div><a href="https://janaka.me">← Home</a></div>
+    <div><a href="https://blog.janaka.me">Blog</a> · <a href="https://ai.janaka.me">AI/Agents</a> · <a href="https://cv.janaka.me">CV</a></div>
+  </nav>
+  <h1>Labs</h1>
+  <p class="meta">Live experiments, small tools, and proof-of-concepts.</p>
+
+  <section class="grid">
+    <article class="card">
+      <h2>RAG Chatbot (FAISS)</h2>
+      <p class="meta">Python · FAISS · OpenAI SDK 0.33</p>
+      <p>Local doc search with chunking, MMR, re-rank, and guardrails.</p>
+      <p><a href="./rag-demo/">Open demo</a> · <a href="https://github.com/Janaka2/RAG-Powered-Chatbot">Source</a></p>
+    </article>
+
+    <article class="card">
+      <h2>Job-Research Agent</h2>
+      <p class="meta">Agents · Multi-tool orchestration</p>
+      <p>Scrapes roles, matches to profile, drafts outreach with guardrails.</p>
+      <p><a href="./job-agent/">Open demo</a> · <a href="https://github.com/Janaka2">Source</a></p>
+    </article>
+
+    <article class="card">
+      <h2>Momentum Journal</h2>
+      <p class="meta">Daily system · voice & text</p>
+      <p>Lightweight routine for clarity, actions, and tracking.</p>
+      <p><a href="./momentum/">Open</a></p>
+    </article>
+  </section>
+</div>
+</body>
+</html>
