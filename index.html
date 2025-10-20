@@ -1,51 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Labs — Experiments & Demos</title>
-  <meta name="description" content="Hands-on demos: RAG chatbot, LinkedIn agent, momentum journal, and more." />
-  <link rel="canonical" href="https://labs.janaka.me/"/>
+  <meta name="description" content="Hands-on demos: RAG chatbot, job research agent, momentum journal, and more.">
+  <link rel="canonical" href="https://lab.janaka.me/"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body{margin:0;background:#0b1016;color:#e8eef7;font:16px/1.6 system-ui}
-    a{color:#00b3ff} .wrap{max-width:1100px;margin:0 auto;padding:24px}
-    .nav{display:flex;gap:12px;justify-content:space-between;border-bottom:1px solid #2a3a50;padding:12px 0}
-    .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-    .card{background:#121823;border:1px solid #2a3a50;border-radius:14px;padding:16px}
-    .meta{color:#9fb1c5;font-size:14px}
-    .tag{display:inline-block;background:#1a2330;border:1px solid #2a3a50;border-radius:999px;padding:4px 10px;margin-right:6px;font-size:12px;color:#9fb1c5}
+    body { font-family: 'Inter', sans-serif; }
   </style>
 </head>
-<body>
-<div class="wrap">
-  <nav class="nav">
-    <div><a href="https://janaka.me">← Home</a></div>
-    <div><a href="https://blog.janaka.me">Blog</a> · <a href="https://ai.janaka.me">AI/Agents</a> · <a href="https://cv.janaka.me">CV</a></div>
+<body class="bg-gray-100 leading-relaxed text-gray-800">
+  <nav class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <div class="flex space-x-4 text-sm">
+        <a href="https://janaka.me" class="text-blue-600">Home</a>
+        <a href="https://blog.janaka.me" class="text-blue-600">Blog</a>
+        <a href="#" class="text-blue-600 font-semibold border-b-2 border-blue-600">Lab</a>
+        <a href="https://ai.janaka.me" class="text-blue-600">AI / Agents</a>
+        <a href="https://cv.janaka.me" class="text-blue-600">CV</a>
+      </div>
+    </div>
   </nav>
-  <h1>Labs</h1>
-  <p class="meta">Live experiments, small tools, and proof-of-concepts.</p>
-
-  <section class="grid">
-    <article class="card">
-      <h2>RAG Chatbot (FAISS)</h2>
-      <p class="meta">Python · FAISS · OpenAI SDK 0.33</p>
-      <p>Local doc search with chunking, MMR, re-rank, and guardrails.</p>
-      <p><a href="./rag-demo/">Open demo</a> · <a href="https://github.com/Janaka2/RAG-Powered-Chatbot">Source</a></p>
-    </article>
-
-    <article class="card">
-      <h2>Job-Research Agent</h2>
-      <p class="meta">Agents · Multi-tool orchestration</p>
-      <p>Scrapes roles, matches to profile, drafts outreach with guardrails.</p>
-      <p><a href="./job-agent/">Open demo</a> · <a href="https://github.com/Janaka2">Source</a></p>
-    </article>
-
-    <article class="card">
-      <h2>Momentum Journal</h2>
-      <p class="meta">Daily system · voice & text</p>
-      <p>Lightweight routine for clarity, actions, and tracking.</p>
-      <p><a href="./momentum/">Open</a></p>
-    </article>
+  <header class="bg-gradient-to-r from-blue-50 to-indigo-100 py-12 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h1 class="text-4xl font-extrabold text-gray-900 mb-2">Labs & Experiments</h1>
+      <p class="text-xl text-gray-700 mb-4">Live demos, small tools and proof‑of‑concepts exploring AI, automation and productivity.</p>
+    </div>
+  </header>
+  <section class="py-12 px-4 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-gray-50 rounded-lg p-6 shadow">
+          <h2 class="font-semibold text-blue-700 mb-2">RAG Chatbot (FAISS)</h2>
+          <p class="text-gray-600 mb-2 text-sm">Python · FAISS · OpenAI SDK</p>
+          <p class="text-gray-700 mb-4">Local doc search with chunking, MMR, re‑rank, and guardrails.</p>
+          <div class="flex space-x-4">
+            <a href="./rag-demo/" class="text-blue-600 text-sm underline">Open Demo</a>
+            <a href="https://github.com/Janaka2/RAG-Powered-Chatbot" class="text-blue-600 text-sm underline">Source</a>
+          </div>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-6 shadow">
+          <h2 class="font-semibold text-blue-700 mb-2">Job‑Research Agent</h2>
+          <p class="text-gray-600 mb-2 text-sm">Agents · Multi‑tool orchestration</p>
+          <p class="text-gray-700 mb-4">Scrapes roles, matches to profile, drafts outreach with guardrails.</p>
+          <div class="flex space-x-4">
+            <a href="./job-agent/" class="text-blue-600 text-sm underline">Open Demo</a>
+            <a href="https://github.com/Janaka2/job-research-agent" class="text-blue-600 text-sm underline">Source</a>
+          </div>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-6 shadow">
+          <h2 class="font-semibold text-blue-700 mb-2">Momentum Journal</h2>
+          <p class="text-gray-600 mb-2 text-sm">Daily system · voice & text</p>
+          <p class="text-gray-700 mb-4">Lightweight routine for clarity, actions and tracking.</p>
+          <a href="./momentum/" class="text-blue-600 text-sm underline">Open Demo</a>
+        </div>
+      </div>
+    </div>
   </section>
-</div>
+  <footer class="bg-gray-800 text-gray-400 py-4">
+    <div class="max-w-6xl mx-auto text-center text-sm">
+      © 2025 Janaka Premathilaka. Built with ♥ and Tailwind CSS.
+    </div>
+  </footer>
 </body>
 </html>
